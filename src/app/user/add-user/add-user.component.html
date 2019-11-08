@@ -1,0 +1,9 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" #txtemail>
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input type="text" matInput placeholder="Password" #txtpassword>
+  </mat-form-field><br>
+  <button (click)="onSubmit(txtemail.value,txtpassword.value)" mat-stroked-button color="primary">Primary</button>
+</form>

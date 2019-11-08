@@ -1,0 +1,11 @@
+<div class="editdiv">
+  <mat-form-field class="example-full-width">
+    <input type="email" readonly matInput placeholder="Email" [(ngModel)]="txtemail">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter Password" name="txtpassword" [(ngModel)]="txtpassword">
+  </mat-form-field><br>
+
+
+  <button (click)="onEditSubmit()" mat-stroked-button color="primary">Done</button>
+</div>

@@ -1,0 +1,21 @@
+<div class="editdiv">
+  <mat-form-field class="example-full-width">
+    <input type="email" readonly matInput placeholder="Email" [(ngModel)]="txtemail">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Customer Name" name=txtCustomerName [(ngModel)]="txtCustomerName">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input type="number" matInput placeholder="Phone number" [(ngModel)]="txtphoneNumber">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Address" [(ngModel)]="txtaddress"></textarea>
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="State" [(ngModel)]="txtstate">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input type="number" matInput placeholder="pincode" [(ngModel)]="txtpincode">
+  </mat-form-field><br>
+  <button (click)="onEditSubmit()" mat-stroked-button color="primary">Done</button>
+</div>

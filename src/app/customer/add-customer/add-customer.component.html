@@ -1,0 +1,24 @@
+
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Customer Name" #txtCustomerName>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput placeholder="Phone number" #txtphoneNumber>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <input type="email" matInput placeholder="Email" #txtemail>
+    </mat-form-field><br>
+
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Address" #txtaddress></textarea>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <input  matInput placeholder="State" #txtstate>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput placeholder="pincode" #txtpincode>
+    </mat-form-field><br>
+    <button (click)="onSubmit(txtCustomerName.value,txtphoneNumber.value,txtemail.value,txtaddress.value,txtstate.value,txtpincode.value)" mat-stroked-button color="primary">Primary</button>
+  </form>
